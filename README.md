@@ -92,4 +92,4 @@ Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ## Autor
 
-- [Nicolás Martínez Pineda](wwww.github.com/nikkaoyy)
+- [Nicolás Martínez Pineda](https://github.com/nikkaoyy)
