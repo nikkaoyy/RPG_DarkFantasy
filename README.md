@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RPG Abstract Factory + Builder
 
 Sistema de creación de personajes RPG implementado con los patrones de diseño **Abstract Factory** y **Builder**.
@@ -12,19 +11,6 @@ Este proyecto demuestra la implementación combinada de dos patrones creacionale
 
 ## Características
 
-=======
-# RPG Abstract Factory
-
-Sistema de creación de personajes RPG implementado con el patrón de diseño **Abstract Factory**.
-
-## Descripción
-
-Este proyecto demuestra la implementación del patrón Abstract Factory en Python, permitiendo la creación de personajes completos para un juego RPG. Cada raza (Humano, Orco, Elfo) tiene su propia familia de productos (Cuerpo, Montura, Armadura, Arma) que se crean de manera cohesiva a través de factorías especializadas.
-
-## Características
-
-- **Patrón Abstract Factory**: Creación de familias de objetos relacionados sin especificar sus clases concretas
->>>>>>> 9cfba27844f0e0878f0f4d9ffbfb09d1432d2303
 - **3 Razas disponibles**:
   - 🧙 Humano: Estadísticas equilibradas
   - 💪 Orco: Alta fuerza y defensa
@@ -36,7 +22,6 @@ Este proyecto demuestra la implementación del patrón Abstract Factory en Pytho
   - Armadura (Defensa y equipamiento)
   - Arma (Múltiples opciones según raza)
 
-<<<<<<< HEAD
 - **3 Arquetipos predefinidos** (vía Director):
   - ⚔️ Guerrero: cuerpo + armadura + arma + montura
   - 🏹 Explorador: cuerpo + arma + montura
@@ -45,11 +30,6 @@ Este proyecto demuestra la implementación del patrón Abstract Factory en Pytho
 ## Requisitos
 
 - Python 3.10+
-=======
-## Requisitos
-
-- Python 3.6+
->>>>>>> 9cfba27844f0e0878f0f4d9ffbfb09d1432d2303
 
 ## Instalación
 
@@ -63,7 +43,6 @@ cd RPG_AbFac
 Ejecutar el programa:
 
 ```bash
-<<<<<<< HEAD
 python backend/principal.py
 ```
 
@@ -98,49 +77,18 @@ Arma: Arco
 - Alcance: +5
 Montura: Unicornio
 Habilidades: Sigilo, Rastreo
-=======
-python rpg.py
-```
-
-Se te pedirá que selecciones una raza:
-
-```
-Elige tu raza (humano, orco, elfo): humano
-```
-
-El sistema creará un personaje completo con todos sus componentes:
-- Estadísticas del cuerpo
-- Montura disponible
-- Armadura equipada
-- Selección de arma
-
-### Ejemplo de ejecución
-
-```
-Elige tu raza (humano, orco, elfo): humano
-Stats:
-- Fuerza: 7
-- Agilidad: 7
-- Inteligencia: 7
-- Defensa: 7
-- Vida: 100
-- Ataque: 7
-Montura: Caballo
-...
->>>>>>> 9cfba27844f0e0878f0f4d9ffbfb09d1432d2303
 ```
 
 ## Estructura del Proyecto
 
 ```
 RPG_AbFac/
-<<<<<<< HEAD
 ├── backend/
 │   ├── productos.py     # Interfaces abstractas, productos concretos y clase Personaje
 │   ├── fabricas.py      # RazaFactory abstracta + fábricas concretas por raza
 │   ├── builder.py       # PersonajeBuilder, ConstructorPersonaje y Director
-│   └── principal.py     # Punto de entrada
-├── LICENSE
+│   ├── principal.py     # Punto de entrada
+│   └── test.py          # Pruebas independientes
 └── README.md
 ```
 
@@ -171,40 +119,19 @@ También es posible usar el Builder directamente sin el Director para personaliz
 ```python
 personaje = (
     ConstructorPersonaje()
-    .set_nombre(nombre)
-    .set_raza(raza)
+    .set_nombre("Sylvanas")
+    .set_raza("elfo")
     .construir_cuerpo()
     .construir_arma()
-    .agregar_habilidad("Lluvia de flechas") # ejemplo
+    .agregar_habilidad("Lluvia de flechas")
     .get_personaje()
 )
 ```
-=======
-├── rpg.py           # Código principal con todas las clases
-├── README.md        # Este archivo
-└── LICENSE          # Licencia del proyecto
-```
-
-## Patrón Abstract Factory
-
-El patrón utiliza:
-
-- **Interfaces abstractas** (`humano`, `orco`, `elfo`): Definen los métodos que deben implementar
-- **Productos concretos**: Clases específicas para cada componente
-- **Factorías abstractas** (`razaFactory`): Define los métodos de creación
-- **Factorías concretas** (`humanoFactory`, `orcoFactory`, `elfoFactory`): Implementan la creación de productos
-
-Esta estructura garantiza que los componentes de un personaje sean cohesivos y utilizados correctamente.
->>>>>>> 9cfba27844f0e0878f0f4d9ffbfb09d1432d2303
 
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
-<<<<<<< HEAD
-## Autores
-=======
 ## Autor
->>>>>>> 9cfba27844f0e0878f0f4d9ffbfb09d1432d2303
 
 - [Nicolás Martínez Pineda](https://github.com/nikkaoyy)
