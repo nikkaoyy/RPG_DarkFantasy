@@ -132,6 +132,6 @@ personaje = (
 
 Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## Autor
+## Autores
 
 - [Nicolás Martínez Pineda](https://github.com/nikkaoyy)
