@@ -135,3 +135,8 @@ Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ## Autores
 
 - [Nicolás Martínez Pineda](https://github.com/nikkaoyy)
+
+## Contexto académico
+
+Juego RPG medieval de dark fantasy construido con **Abstract Factory** y **Factory Method**. Trabajo del curso **Modelos de Programación** de Ingeniería de Sistemas (Universidad Distrital Francisco José
+de Caldas), con el docente **Daza**, el mismo curso donde aprendí a revisar la calidad del código con **SonarQube**.
